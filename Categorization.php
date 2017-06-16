@@ -1,4 +1,4 @@
-<html>
+<p></p><html>
 <head>
     <meta charset="utf-8">
 
@@ -59,7 +59,7 @@ border-color:pink;
               <li class=""><a href="/dashboard/howto.html">HOW-TO Guides</a></li>
               <li class=""><a target="_blank" href="/dashboard/phpinfo.php">PHPInfo</a></li>
               <li class=""><a href="/phpmyadmin/">phpMyAdmin</a></li>
-              <li class=""><a href="/dashboard/phpscripts/Categorization.php">Manual Categorization</a></li>
+              <li class=""><a href="/dashboard/test3.php">Manual Categorization</a></li>
           </ul>
         </section>
       </nav>
@@ -88,72 +88,67 @@ $result = mysqli_query($con, "SELECT tweets_table.tweets_key,tweets_table.conten
  
 echo "<table border='1'>
 <tr>
-<th>ID</th>
+<th>Id</th>
 <th>Content</th>
-<th>Machine Category(Jk)</th>
+<th>Machine Category</th>
 <th>Category</th>
-<td><input type='submit' value='Submit All' action=''></td>
-</tr>
-";
- $i=0;
- while ($i<100){
-  while($row = mysqli_fetch_array($result))
-    {
-    echo "<tr>";
-    echo "<td>" . $row['tweets_key']. "</td>";
-    echo "<td>" . $row['content'] . "</td>";
-    echo "<td>" . $row['category_1'] . "</td>";
-    echo "<td><form method='POST' type='text' id='".$i."'action=''> 
-    <select name='category' >
-    <option disabled selected>Select One...</option>
-    <option value=1>Violent Crimes</option>
-    <option value=2>Arrests Made</option>
-    <option value=3>Community Activities</option>
-    <option value=4>Missing Persons</option>
-    <option value=5>Victim of Crimes</option>
-    <option value=6>Humanizing</option>
-    <option value=7>DBP Campaigns
-    <option value=8>Other</option>
-    </select> </td>
-    <td> <input type='submit'></form> </td>";
-    echo "</tr>";
-    $i++;
-    }}
-  echo "</table>";
-  echo "<div>". mysqli_fetch_array($result)."</div>";
-   
-  mysqli_close($con);
-  ?>
-  <div class="row">
-    <div class="large-12 columns"></div>
-  </div>
 
-      </div>
+</tr>";
+ 
+while($row = mysqli_fetch_array($result))
+  {
+  echo "<tr>";
+  echo "<td>" . $row['tweets_key'] . "</td>";
+  echo "<td>" . $row['content'] . "</td>";
+  echo "<td>" . $row['category_1'] . "</td>";
+  echo "<td>" ."<form method='POST' type='text'> 
+  <select name=category>
+  <option value=Vc>Violent Crimes</option>
+  <option value=Am>Arrests Made</option>
+  <option value=Ca>Community Activities</option>
+  <option value=Mp>Missing Persons</option>
+  <option value=Voc>Victim of Crimes</option>
+  <option value=Hu>Humanizing</option>
+  <option value=DBP>DBP Campaigns
+  <option value=Other>Other</option>
+  </select>". "</td>";
+  echo "<td>" . "<input type='submit'></form>"."</td>";
+  echo "</tr>";
+  }
+echo "</table>";
+ 
+mysqli_close($con);
+?>
+<div class="row">
+  <div class="large-12 columns"></div>
+</div>
 
-      <footer>
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="row">
-              <div class="large-8 columns">
-                
+    </div>
 
-                <ul class="inline-list">
-                 
-                </ul>
-              </div>
-              <div class="large-4 columns">
-                <p class="text-right">Copyright (c) 2015, Apache Friends</p>
-              </div>
+    <footer>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-8 columns">
+              
+
+              <ul class="inline-list">
+               
+              </ul>
+            </div>
+            <div class="large-4 columns">
+              <p class="text-right">Copyright (c) 2015, Apache Friends</p>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-      <!-- JS Libraries -->
-      <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-      <script src="/dashboard/javascripts/all.js" type="text/javascript"></script>
-  </body>
-  </html>
+    <!-- JS Libraries -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/dashboard/javascripts/all.js" type="text/javascript"></script>
+</body>
+</html>
   
 
 
