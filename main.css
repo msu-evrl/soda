@@ -1,0 +1,191 @@
+.element{
+  		display: block;
+  		padding: 0;
+  		margin: 0;
+  		overflow: hidden;
+  	}
+  	.element-list{
+  		height: 400px;
+  		width: 150px;
+  		border: 1px solid black;
+  		position: relative;
+  		margin-top: 50px;
+  		text-align: center;
+  		margin-left: 5px;
+  		padding: 0;
+  		
+
+  	}
+    .elemen-header{
+      position: absolute;
+      top: 10%;
+      z-index: 2;
+      height: 30px;
+    }
+  	ul.element-list{
+  		border: none;
+  		display: block;
+      overflow-y: scroll; 
+      overflow-x: hidden;
+      z-index: 1;
+      margin: 0;
+      height: 350px;
+  	}
+	.header{
+		width: 100%;
+		height: 100px;
+		background-color: navy;
+		color: white;
+		display: flex;
+		justify-content: space-around;
+
+	}
+  	.d3-tip {
+            background-color: navy;
+            color: white;
+            padding: 5px;
+        }
+    .bar{
+    	
+    }
+    #loading{
+     // background-color: blue;
+      z-index: 10;
+    }
+
+    #hashtag_text{
+      position: absolute;
+      z-index: 1;
+      top: 40%;
+      margin: auto;
+      right:0;
+      left:0;
+      width: 50%;
+      font-size: 50px;
+    }
+
+    .noResponse{
+      font-size: 50px;
+      
+
+    }
+
+    .wrapper{
+    	display: flex;
+    	justify-content: space-around;
+    }
+    .container-col{
+    	display: flex;
+   		justify-content: space-around;
+   		
+   		flex-direction : column;
+
+
+    }
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      border-bottom: 5px solid #3498db;
+      width: 80px;
+      height: 80px;
+      margin: auto;
+      position: absolute;
+      top: 40%;
+      left: 43%;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    .container-row{
+    	display: flex;
+   		justify-content: space-around;
+   		
+   		flex-direction : row;
+      vertical-align: center;
+    }
+    input[type="date"]:before {
+      content: attr(placeholder) !important;
+      color: #aaa;
+      margin-right: 0.5em;
+    }
+    input[type="date"]:focus:before,
+    input[type="date"]:valid:before {
+      content: "";
+    }
+    #dateForm{
+      display: flex;
+      flex-direction : row;
+    }
+    .y.axis line,
+    .y.axis path{
+      fill: none;
+      stroke: #000;
+    }
+    .x.axis line,
+    .x.axis path{
+      fill: none;
+      stroke: #000;
+    }
+    body{
+    	margin: 0; 
+    }
+    #chart_div{
+    	margin-top: 50px;
+    	position: relative;
+    	
+
+    }
+    .bar:hover{
+    	fill: orange;
+    }
+    .bBox{
+
+    	border: 1px solid black;
+    }
+    .line{
+    	stroke : blue;
+    	stroke-width:  2px;
+    	fill: none;
+    }
+    #bBox{
+    	position: relative;
+    	z-index: 1;
+    }
+    .hide{
+    	display: none;
+    }
+    #lBox{
+
+    	top: 0;
+    	position: absolute;
+    	z-index: 2;
+    	background-color: white;
+    }
+    .context-menu{
+    	display: none;
+    	position: absolute;
+    	z-index: 10;
+    }
+    .context-menu--active{
+    	display: block;
+    	position: absolute;
+    	z-index: 10;
+    }
+    .context-menu__item{
+    	border: 1px solid black;
+    	display: inline-block;
+    	padding: 5px;
+    	background-color: white;
+    }
+    .context-menu__link{
+
+    	color: red;
+    	text-decoration: none;
+    }
