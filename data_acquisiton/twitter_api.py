@@ -106,23 +106,9 @@ def main():
                           api.credentials['access_token_secret'])
     stream = tweepy.Stream(auth, listener)
     api = tweepy.API(auth)
-    # etuk = tweepy.Cursor(api.user_timeline, id=1187174083252903938)
-
-    # for status in tweepy.Cursor(api.user_timeline).items(200):
-    #     print(status)
-
-    # print(list(etuk.items()))
-    # print(list(etuk.items()))
-
-    # for status in tweepy.Cursor(api.user_timeline, id="realDonaldTrump", since="2019-12-12", until="2020-1-1", count=100,).items():
-    #     print(status)
-
-
-    #stream = tweepy.Stream(stuff, listener)
+    
     stream.filter(track = "apples") 
-    # for follower in limit_handled(tweepy.Cursor(api.followers).items()):
-    #     if follower.friends_count < 300:
-    #         print(follower.screen_name)
+   
 
 if __name__ == '__main__':
     main()

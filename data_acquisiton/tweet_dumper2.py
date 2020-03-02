@@ -51,7 +51,7 @@ def get_all_tweets(screen_name):
         # update the id of the oldest tweet less one
         oldest = alltweets[-1].id - 1
 
-        #rate limiter 
+        #RATE LIMITER (IN TESTING)
         # try:
         #     yield cursor.next()
         # except tweepy.RateLimitError:
