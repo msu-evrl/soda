@@ -1,5 +1,0 @@
-# This will ignore all of the twitter files that we do not want uploaded to github when we push. 
-
-# Credentials of any sort
-.twitter-credentials.json 
-
