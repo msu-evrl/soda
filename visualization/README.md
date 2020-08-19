@@ -1,4 +1,4 @@
-### VISUALIZTION
+### VISUALIZATION
 Visualization is one way to gain insights from data. It is oor thisne effective technoque for Data Mining which is the process of looking at large sets of information in a different way so that new information can be derived from  that which already exists.
 Visualizations can be used to answer questions related to a specific problem.
 For this visualization, we are going to create a dashboard in python using plotly with Dash.
