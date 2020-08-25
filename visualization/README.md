@@ -1,5 +1,5 @@
 ### VISUALIZATION
-Visualization is one way to gain insights from data. It is oor thisne effective technoque for Data Mining which is the process of looking at large sets of information in a different way so that new information can be derived from  that which already exists.
+Visualization is one way to gain insights from data. It is an effective technique for Data Mining which is the process of looking at large sets of information in a different way so that new information can be derived from  that which already exists.
 Visualizations can be used to answer questions related to a specific problem.
 For this visualization, we are going to create a dashboard in python using plotly with Dash.
 
@@ -9,8 +9,6 @@ Plotly's Python graphing library makes interactive, publication-quality graphs. 
 Built on top of the Plotly JavaScript library (plotly.js), plotly.py enables Python users to create beautiful interactive web-based visualizations that can be displayed in Jupyter notebooks, saved to standalone HTML files, or served as part of pure Python-built web applications using Dash.
 
 Thanks to deep integration with the orca image export utility, plotly.py also provides great support for non-web contexts including desktop editors (e.g. QtConsole, Spyder, PyCharm) and static document publishing (e.g. exporting notebooks to PDF with high-quality vector images).
-
-
 
 #### About the Dashboard
 This dashboard answers specific questions that give some insight to the data we have.
