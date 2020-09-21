@@ -1,4 +1,6 @@
-# Cyber Identity Reconciliation Engine
+# Social Data Analytics (SoDA)
+
+This is a continuation/supporting piece to the Cyber Identity Reconciliation Engine.
 
 Internet identity or internet persona is a social identity that an Internet user establishes in online communities and websites. While most online persona’s do not explicitly identify the individual, it is most likely that implicit identification can be accomplished through the combination of multiple data sets. Almost every interaction with technology creates digital traces, from the cell tower used to route mobile calls to the vendor recording a credit card transaction; from the photographs taken, to the “status updates” posted online. The idea that these traces can all be merged and connected opens many possibilities to positively identify individuals with multiple online personas. The ability to merge different datasets across domains can facilitate situational awareness for cybersecurity operations.
 
@@ -35,28 +37,13 @@ datetime
 ```
 sqlite3
 ```
+```
+jupyter notebook
+```
 
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-pip install python3 
-```
-
-```
-pip install tweepy
-```
-
-```
-pip install sqlite3
-```
-
-The other prerequisites should already be installed with the python library. If not 
-install the remaining by entering "pip install (field)"
 
 ## Running the tests
 
@@ -110,7 +97,7 @@ We use [Tweepy](http://docs.tweepy.org/en/latest/index.html) for versioning. For
 
 * **Dr. Kofi Nyarko** 
 * **Kelechi Nwachukwu**
-* **Mfon Etuk** 
+* **Taofeek Obafemi-Babatunde** 
 
 ## License
 
